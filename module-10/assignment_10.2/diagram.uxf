@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>220</y><w>210</w><h>90</h></coordinates><panel_attributes>_User_
+--
+user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+first_name varcjar 75 not null
+Last_name varchar 75 not null
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>230</y><w>210</w><h>80</h></coordinates><panel_attributes>_Wishlist_
+--
+wishlist_id int not null auto_increment primary key
+user_id int not null foreigh key
+book_id int not null  foreign key
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>440</y><w>210</w><h>100</h></coordinates><panel_attributes>_Books
+--
+book_id int not null anto_increment primary key
+book_name varchar 200 not null 
+details V varchar(500)
+author varchar(200) not null</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>450</y><w>210</w><h>70</h></coordinates><panel_attributes>_Store_
+-
+store_id int not null primary key
+locale varchar(500) not null
+ </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>250</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..n
+has &gt;</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>300</y><w>230</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1..n
+m2=0..n
+belongs  to&gt;</panel_attributes><additional_attributes>10;140;210;10</additional_attributes></element></diagram>
